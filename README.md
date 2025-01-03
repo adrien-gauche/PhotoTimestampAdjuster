@@ -40,16 +40,16 @@ python PhotoTimestampAdjuster.py "C:\Users\YourUsername\Pictures"
 
 ## How It Works
 
-Scans the directory (and subdirectories) for files.
-Extracts the EXIF metadata from supported image files (.png, .jpg, .jpeg, .tiff, .bmp, .gif).
-Adjusts the creation timestamp to match the capture date if available, or the earliest modification date otherwise.
-Logs any errors encountered in error_log.txt.
+- Scans the directory (and subdirectories) for files.
+- Extracts the EXIF metadata from supported image files (.png, .jpg, .jpeg, .tiff, .bmp, .gif).
+- Adjusts the creation timestamp to match the capture date if available, or the earliest modification date otherwise.
+- Logs any errors encountered in error_log.txt.
 
 ## Notes
 
-The script is designed to work on Windows systems, as it uses Windows-specific APIs for updating file timestamps.
-Updating the file creation time is not supported on non-Windows platforms.
-EXIF metadata must include the "DateTime" tag for capture date adjustments to work.
+- The script is designed to work on Windows systems, as it uses Windows-specific APIs for updating file timestamps.
+- Updating the file creation time is not supported on non-Windows platforms.
+- EXIF metadata must include the "DateTime" tag for capture date adjustments to work.
 
 ## Disclaimer
 
